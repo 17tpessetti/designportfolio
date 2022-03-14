@@ -1,0 +1,581 @@
+.skip{
+    background: white;
+    color: #5E5DF0;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    z-index: 1;
+  }
+  
+  .skip:focus{
+  /*Add the selector and rule to move the skip link to the exact top.*/
+    top: 0px;
+  }
+
+/*Typewriter effect on top */
+.typewriter {
+    color: #fff;
+    font-size: 24pt;
+    font-family: 'Charmonman', cursive;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    animation: 
+      typing 2.5s steps(30, end);
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 45% }
+  }
+  
+  /* The typewriter cursor effect */
+
+  .navbar-light .navbar-nav .active>.nav-link{
+    text-decoration: underline;
+    color: #5E5DF0;
+}
+
+
+body{
+    font-family: 'Barlow', 'Open Sans', sans-serif;
+}
+
+main{
+    margin: 20px 30px;
+}
+
+a.button-34 {
+    background: #5E5DF0;
+    border-radius: 50px;
+    box-shadow: #5E5DF0 0 10px 10px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF !important; 
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    margin-bottom: 20px;
+  }
+
+.button-34:hover{
+    background: #4b4bd8;
+}
+
+.button-flex{
+    margin-bottom: 25px;
+}
+
+.button-flex .button-34{
+    margin-right: 5px;
+}
+
+h1, h2, .color-bold{
+    color: #5E5DF0;
+    font-weight: bold;
+}
+
+h1{
+    padding: 20px 0px 5px 0px;
+}
+
+h2{
+    font-size: 32pt;
+}
+
+h3{
+    font-weight: bold;
+}
+
+nav{
+    box-shadow: 2px 2px 10px 2px rgb(209, 209, 209);
+}
+
+footer{
+    text-align: center;
+    background-color: #5E5DF0;
+    color: white;
+    padding: 20px 0px 10px 0px;
+}
+
+.img-border{
+    border: 1px solid gray;
+}
+
+.bold{
+    font-family: 'Open Sans';
+    font-weight: 800;
+}
+
+/* Styling for the main page */
+.main-img{
+    border-radius: 10px;
+}
+
+.headshot{
+    width: 100%;
+    text-align: center;
+}
+
+.headshot img{
+    width: 95%;
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+.icon{
+    width: 30px;
+    height: auto;
+    margin: 0px 10px 25px 0px;
+}
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0px;
+    
+}
+
+.main-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.projects-page h2{
+    text-align: center;
+    margin: 30px 0px 20px 0px;
+}
+
+.project-main{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 40px 0px 30px 0px;
+}
+
+.project-main img{
+    width: 80%;
+}
+
+.main-project-info{
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Styling for UMEB page or maybe the project template*/
+
+.project-page-header{
+    text-align: center;
+}
+
+.project-page-header img{
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 20px;
+}
+
+.project-page-main{
+    margin-top: 70px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*.project-page-main h2{
+    text-align: center;
+}*/
+
+.project-desc{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.project-small-div{
+    margin: 30px 0px;
+}
+
+.project-timeline{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.project-timeline img{
+    width: 90%;
+    max-width: 600px;
+}
+
+.cyber-timeline img{
+    width: 90%;
+    max-width: 800px;
+}
+
+a.button-33 {
+    background: #5E5DF0;
+    border-radius: 50px;
+    box-shadow: #5E5DF0 0 10px 10px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF !important; 
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 30% 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    margin-bottom: 20px;
+  }
+
+.button-33:hover{
+    background: #4b4bd8;
+}
+
+.button-33:focus{
+    background: #4b4bd8;
+    text-decoration: underline;
+}
+
+.button-center{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.wireframes-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wireframes-flex img{
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.larger-img-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.larger-img-flex img{
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+/* This is for the image carousel on the umeb page */
+.d-block{
+    height: 180px;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-item{
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+.carousel-indicators{
+    margin-bottom: 0px;
+}
+
+/* Cyberclass styling */
+
+.figma-prototype{
+    width: 90%;
+    height: 450px;
+    max-width: 600px;
+    margin-bottom: 15px;
+}
+
+.title-and-logo img{
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.ca-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.ca-child h3{
+    text-align: center;
+}
+
+.small-div-list ul{
+    padding-left: 20px;
+}
+
+.small-div-list{
+    background-color: rgb(241, 241, 241);
+    padding: 20px;
+    margin: 20px 0px 20px 0px;
+}
+
+.img-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-flex img{
+    width: 95%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 15px 0px 15px 0px;
+}
+
+.prototype-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prototype-flex video{
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+.prototype-flex iframe{
+    width: 100%;
+    min-height: 300px;
+    height: auto;
+    max-width: 500px;
+}
+
+
+@media screen and (min-width: 500px){
+    /* For the carousel on the umeb page */
+    .d-block{
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+    }
+
+    .carousel{
+        max-width: 600px;
+        margin: 40px auto 0px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar-collapse{
+        justify-content: flex-end;
+      }
+
+    /* Main Page Styling */
+    .main-header{
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: 80px 0px;
+    }
+
+    .main-items{
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .headshot img{
+        width: 300px;
+        margin-right: 20px;
+    }
+
+    .project-main{
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: 40px 0px 80px 0px;
+    }
+
+    .main-project-info{
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        margin-left: 30px;
+        width: 600px;
+    }
+
+    .project-main img{
+        width: 40%;
+    }
+
+    /* UMEB page and project template styling */
+    .project-page-header img{
+        height: 225px;
+        width: 83%;
+        object-fit: cover;
+        object-position: top;
+        overflow: hidden;
+    }
+
+    .project-desc{
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+        margin-bottom: 30px;
+
+    }
+
+    .span-1{
+        width: 40%;
+    }
+
+    .span-2{
+        width: 40%;
+        margin-left: 40px;
+    }
+
+    a.button-33{
+        margin-top: 40px;
+        padding: 12px 30% 14px;
+        max-width: 400px;
+    }
+
+    .project-page-main{
+        margin-top: 70px;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+    .wireframes-flex img{
+        width: 150px;
+    }
+
+    /*Cyberclass design*/
+    .ca-child{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .title-and-logo img{
+        width: 150px;
+        height: auto;
+    }
+
+    .title-and-logo{
+        margin-right: 20px;
+    }
+
+    .img-flex{
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .img-flex img{
+        width: 300px;
+        margin: 15px 15px 15px 15px;
+    }
+
+
+}
+
+@media screen and (min-width: 1000px){
+    .main-items{
+        margin-left: 0px;
+        max-width: 500px;
+    }
+
+    .headshot{
+        width: 400px;
+        justify-self: flex-end;
+    }
+
+    .headshot img{
+        margin-right: 0px;
+    }
+
+    .main-header{
+        justify-content: center;
+    }
+
+    .project-main img{
+        width: 375px;
+    }
+
+    /* Project template and UMEB page */
+    .span-1{
+        width: 30%;
+    }
+
+    .span-2{
+        width: 30%;
+        margin-left: 40px;
+    }
+
+    .project-small-div>p, .project-small-div>h2{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .wireframes-flex img{
+        width: 150px;
+    }
+
+    /*Cyberclass Styling*/
+    .ca-child{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .small-div-list{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .sketch-flex img{
+        width: 375px;
+    }
+
+    .prototype-flex{
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .prototype-flex video{
+        width: 50%;
+        margin-right: 30px;
+    }
+
+    .prototype-flex iframe{
+        width: 50%;
+        margin-right: 30px;
+    }
+}
+
