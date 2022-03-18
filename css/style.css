@@ -214,6 +214,8 @@ footer{
 
 .project-timeline{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin-top: 40px;
 }
@@ -221,6 +223,7 @@ footer{
 .project-timeline img{
     width: 90%;
     max-width: 600px;
+    margin-bottom: 20px;
 }
 
 .cyber-timeline img{
@@ -264,6 +267,11 @@ a.button-33 {
     text-align: center;
 }
 
+.button-flex{
+    margin-top: 5px;
+    text-align: center;
+}
+
 .wireframes-flex{
     display: flex;
     flex-wrap: wrap;
@@ -288,6 +296,11 @@ a.button-33 {
     height: auto;
     margin: 10px;
     border: 1px solid black;
+}
+
+.shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* This is for the image carousel on the umeb page */
@@ -361,6 +374,7 @@ a.button-33 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
 }
 
 .prototype-flex video{
@@ -369,12 +383,200 @@ a.button-33 {
     max-width: 500px;
 }
 
+.prototype-flex img{
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .prototype-flex iframe{
     width: 100%;
     min-height: 300px;
     height: auto;
     max-width: 500px;
+    background-color: black;
 }
+
+.ytp-title-link{
+    background-color: black;
+}
+
+
+
+.flex-img{
+    margin-top: 20px;
+}
+
+.extra-spacing{
+    margin-bottom: 60px;
+}
+
+/* For the about page */
+.about-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0px; 
+}
+
+.about-header-text h1{
+    text-align: center;
+}
+
+.about-header-text h2{
+    font-size: 16pt;
+}
+
+.about-headshot{
+    width: 100%;
+    text-align: center;
+}
+
+.about-headshot img{
+    width: 95%;
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+.job{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.job-text{
+    text-align: center;
+}
+
+.job img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.margin-bottom{
+    margin-bottom: 15px;
+}
+
+.margin-top{
+    margin-top: 20px;
+}
+
+hr{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.leadership-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.leadership-text{
+    text-align: center;
+}
+
+.leadership-div h2{
+    color: #212529;
+    font-size: 22pt;
+    margin-bottom: 5px;
+}
+
+.leadership-div img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.leader-header{
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+/* For other projects page */
+.other-main>h2{
+    text-align: center;
+}
+
+.other-main{
+    margin-top: 0px;
+}
+
+#large-mockup{
+    display: none;
+}
+
+.img-flex-child{
+    margin-top: 20px;
+}
+
+.img-flex-child h4{
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.small-width, .other-hr{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.other-hr{
+    margin: 40px 5%;
+}
+
+/* For the dropdown menus */
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #5E5DF0;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #4b4bd8;
+    text-decoration: underline;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: inherit;
+    min-width: 160px;
+    z-index: 1;
+  }
+
+  .show {display:inherit;}
+
+  .dropdown-center{
+    display: flex;
+    justify-content: center;
+  }
+
+  /* More styling for the JS */
+  #dropdown-content1{
+      display: none;
+  }
+
+
 
 
 @media screen and (min-width: 500px){
@@ -416,7 +618,7 @@ a.button-33 {
     .project-main{
         flex-direction: row-reverse;
         justify-content: center;
-        margin: 40px 0px 80px 0px;
+        margin: 40px 0px 40px 0px;
     }
 
     .main-project-info{
@@ -500,6 +702,88 @@ a.button-33 {
         margin: 15px 15px 15px 15px;
     }
 
+    /* For the about page */
+    .about-header{
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: 80px 0px;
+    }
+
+    .about-header h1{
+        text-align: left;
+    }
+
+    .about-headshot{
+        width: auto;
+    }
+
+    .about-headshot img{
+        width: 300px;
+        margin-right: 20px;
+    }
+
+    .job{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .job-text{
+        text-align: left;
+        width: 600px;
+        margin-left: 30px;
+    }
+    
+    .job img{
+        width: 40%;
+    }
+
+    .leader-header{
+        margin-bottom: 20px;
+    }
+
+    .leadership-div{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .leadership-text{
+        text-align: left;
+        width: 600px;
+        margin-left: 30px;
+    }
+
+    .leadership-div h2{
+        text-align: left;
+    }
+    
+    .leadership-div img{
+        width: 40%;
+    }
+
+    /* Other page */
+
+    .skinny-flex img{
+        width: 250px;
+    }
+
+    #small-mockup{
+        display: none;
+    }
+
+    #large-mockup{
+        display:inherit;
+        width: 100%;
+    }
+
+    .small-width, .other-hr{
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
 
 }
 
@@ -514,7 +798,16 @@ a.button-33 {
         justify-self: flex-end;
     }
 
+    .about-headshot{
+        width: 400px;
+        justify-self: flex-end;
+    }
+
     .headshot img{
+        margin-right: 0px;
+    }
+
+    .about-headshot img{
         margin-right: 0px;
     }
 
@@ -536,7 +829,7 @@ a.button-33 {
         margin-left: 40px;
     }
 
-    .project-small-div>p, .project-small-div>h2{
+    .project-small-div>p, .project-small-div>h2, .project-small-div>h3{
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -573,9 +866,69 @@ a.button-33 {
         margin-right: 30px;
     }
 
+    .prototype-flex img{
+        width: 50%;
+        margin-right: 30px;
+    }
+
     .prototype-flex iframe{
         width: 50%;
         margin-right: 30px;
     }
+
+    .flex-img{
+        margin-top: 0px;
+    }
+
+    .button-flex{
+        margin-top: 5px;
+        text-align: left;
+    }
+
+    /* For the about page */
+    .about-header{
+        justify-content: center;
+    }
+
+    .job img{
+        width: 30%;
+    }
+
+    .leadership-div img{
+        width: 30%;
+    }
+
+    /* For the other page */
+    .dropbtn{
+       width: 80%;
+    }
+
+    #large-mockup{
+        width: 80%;
+    }
+
+    .small-width, .other-hr{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
 }
+
+@media screen and (prefers-reduced-motion: reduce){
+    /*Turn off scroll*/
+    html{
+      scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+    /*Turn off transition*/
+    a.skip {
+      -webkit-transition: initial; /* sets to default setting */
+      transition: initial; /* sets to default setting */
+    }
+  
+    /*Turn off parallax*/
+    .typewriter{
+        animation: none;
+    }
+  }
 
