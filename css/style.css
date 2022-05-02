@@ -222,8 +222,9 @@ footer{
 
 .image-info-text{
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 20px;
+    padding-right: 20px;
 }
 
 .image-info-text h2{
