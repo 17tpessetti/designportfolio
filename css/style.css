@@ -249,7 +249,7 @@ footer{
 
 .hover-grid img{
     width: 100%;
-    height: 300px;
+    height: auto;
     object-fit: cover;
     object-position: center;
     overflow: hidden;
@@ -258,6 +258,7 @@ footer{
 .hover-card{
     position: relative;
     overflow: hidden;
+    border: 1px solid rgb(209, 209, 209);
 }
 
 .hover-card:hover .image-info{
@@ -795,8 +796,12 @@ hr{
 
     .image-info-text{
         position: absolute;
-        top: 35%;
+        top: 25%;
         left: 20px;
+    }
+
+    .image-info-text h2{
+        font-size: 15pt;
     }
 
 }
@@ -844,6 +849,10 @@ hr{
 
     .project-main img{
         width: 40%;
+    }
+
+    .image-info-text h2{
+        font-size: 18pt;
     }
 
     /* UMEB page and project template styling */
@@ -1157,6 +1166,18 @@ hr{
         margin-right: 10%;
     }
     
+}
+
+@media screen and (min-width: 1250px){
+
+.image-info-text{
+    top: 30%;
+}
+
+.image-info-text h2{
+    font-size: 22pt;
+}
+
 }
 
 @media screen and (prefers-reduced-motion: reduce){
