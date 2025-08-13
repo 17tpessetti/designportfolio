@@ -173,13 +173,42 @@ h3{
     font-weight: 400;
 }
 
+button{
+    color: #5E5DF0;
+    background-color: #FFFFFF;
+    border: none;
+    text-decoration: underline;
+    padding: 0px;
+}
+
+button a{
+    color: #5E5DF0;
+}
+
+button a:hover{
+    color: #5E5DF0;
+}
+
+button a:hover::after{
+    content: " ->";
+    color: #5E5DF0;
+}
+
 
 footer{
+
     text-align: center;
     background-color: #5E5DF0;
     color: white;
     padding: 20px 0px 10px 0px;
 }
+
+/*.bottom-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}*/
 
 .img-border{
     border: 1px solid gray;
@@ -224,8 +253,28 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    width: 85%;
+    width: 90%;
+}
+
+.main-header-text{
+    font-size: 14pt;
+    /*color: rgb(82, 82, 82);*/
+}
+
+.main-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.main-grid .left{
+    font-size: 14pt;
+    padding: 20px 0px 50px 0px;
+}
+
+.main-grid .right{
+    padding-bottom: 30px;
 }
 
 .project-main{
@@ -246,6 +295,54 @@ footer{
     align-items: center;
     text-align: center;
 }
+
+.projects-header{
+    width: 100%;
+    justify-self: center;
+}
+
+
+/* Passwords page */
+
+.fullheight{
+    height: 100%;
+    display: flex; /* Enable Flexbox for body */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; 
+    
+}
+
+.pass-main{
+    flex-grow: 1;
+    justify-self: center;
+    align-self: center;
+}
+
+#password-prompt{
+    padding-top: 100px;
+    width: 291px;
+    justify-items: center;
+}
+
+.pass-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+.pass-field input{
+    width: 100%;
+    margin-right: 20px;
+}
+
+.pass-description{
+    width: 400px;
+}
+
+
+
+
 
 /* Hover cards code */
 .hover-grid{
@@ -282,7 +379,7 @@ footer{
 .image-info{
     position: absolute;
     /* background-color: rgba(255,255,255,.8); */
-    background-color: rgba(94, 93, 240, .8);
+    background-color: rgba(44, 44, 44, 0.802);
     width: 100%;
     height: 100%;
     bottom: 0;
@@ -300,6 +397,8 @@ footer{
     /* color: black; */
     color: white;
     font-size: 22pt;
+
+    
 }
 
 .image-info-text p{
@@ -815,6 +914,11 @@ hr{
         font-size: 15pt;
     }
 
+    .projects-header{
+        width: 85%;
+        justify-self: center;
+    }
+
 }
 
 @media screen and (min-width: 768px){
@@ -830,13 +934,14 @@ hr{
     .main-header{
         flex-direction: row-reverse;
         justify-content: center;
-        margin: 40px 0px 20px 0px;
+        margin: 40px 0px 40px 0px;
     }
 
     .main-items{
         text-align: left;
         align-items: flex-start;
     }
+
 
     .headshot img{
         width: 300px;
@@ -1041,9 +1146,47 @@ hr{
 
 }
 
+@media screen and (min-width: 900px){
+    .main-header-text{
+        font-size: 14pt;
+        /*color: rgb(82, 82, 82);*/
+    }
+    
+    
+    .main-grid .left{
+        font-size: 18pt;
+        padding: 0px 60px 30px 0px;
+    }
+
+    .main-grid .left button{
+        font-size: 14pt;
+    }
+    
+    .main-grid .right{
+        padding-bottom: 0px;
+        padding-left: 60px;
+    }
+}
+
 @media screen and (min-width: 1000px){
     .main-items{
         margin-left: 0px;
+    }
+
+    .main-grid{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
+    }
+
+    .left p {
+        font-size: 20pt;
+    }
+
+    .left a{
+        font-size: 20pt;
     }
 
     .headshot{
