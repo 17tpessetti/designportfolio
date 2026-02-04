@@ -79,6 +79,8 @@
   
   .navbar-light{
       padding-top: 30px;
+      padding-bottom: 30px;
+      box-shadow: 1px 1px 13px -7px #777575;
   }
 
   .navbar-light .navbar-nav .active>.nav-link{
@@ -116,17 +118,16 @@ body{
 }
 
 main{
-    margin: 0px 30px;
+    flex-grow: 1;
 }
 
 a.button-34 {
     background: #5E5DF0;
-    border-radius: 50px;
+    border-radius: 8px;
     box-sizing: border-box;
-    color: #FFFFFF !important; 
+    color: #FFFFFF;
     cursor: pointer;
     font-size: 16px;
-    font-weight: 700;
     line-height: 24px;
     opacity: 1;
     outline: 0 solid transparent;
@@ -141,16 +142,14 @@ a.button-34 {
   }
 
 .button-34:hover{
-    background: #4b4bd8;
+    background: #dcdcdc;
+    color: #5E5DF0;
 }
 
 .button-34:focus{
-    background: #4b4bd8;
+    background: #dcdcdc;
 }
 
-.button-flex{
-    margin-bottom: 25px;
-}
 
 .button-flex .button-34{
     margin-right: 5px;
@@ -186,11 +185,6 @@ button a{
 }
 
 button a:hover{
-    color: #5E5DF0;
-}
-
-button a:hover::after{
-    content: " ->";
     color: #5E5DF0;
 }
 
@@ -297,8 +291,11 @@ footer{
 }
 
 .projects-header{
-    width: 100%;
     justify-self: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 
@@ -407,10 +404,69 @@ footer{
     margin-bottom: 0px;
 }
 
+
+/* New projects page*/
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    row-gap: 60px;
+    margin-bottom: 60px;
+    margin-left: 7%;
+    margin-right: 7%;
+
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.project-img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-info{
+    padding: 50px 50px 50px 50px;
+    align-content: center;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.project-info h2{
+    font-size: 18pt;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.project-details{
+    margin-bottom: 40px;
+}
+
+.project-details h3{
+    font-size: 14pt;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
 /* Styling for UMEB page or maybe the project template*/
 
 .project-page-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    align-items: center;
+    height: 400px;
+    background-image: linear-gradient(#fff, #E7E7FF);
+}
+
+.project-page-header h1{
+    margin: 0px 40px 40px 40px;
 }
 
 .project-page-header img{
@@ -424,6 +480,11 @@ footer{
     margin-top: 70px;
     margin-left: 5%;
     margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    max-width: 1000px;
+    margin-bottom: 50px;
 }
 
 /*.project-page-main h2{
@@ -438,7 +499,26 @@ footer{
 }
 
 .project-small-div{
-    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0px;
+    gap: 20px;
+}
+
+.project-small-div h2, .project-small-div p{
+    margin-bottom: 0px;
+}
+
+.project-small-div a{
+    align-self: center;
+    margin-top: 20px;
+}
+
+.project-small-div img{
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project-timeline{
@@ -471,15 +551,15 @@ a.button-33 {
     line-height: 24px;
     opacity: 1;
     outline: 0 solid transparent;
-    padding: 8px 30% 10px;
+    padding: 8px 30px 10px;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    display: inline;
     width: fit-content;
+    justify-self: center;
     word-break: break-word;
     border: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
 
 .button-33:hover{
@@ -492,13 +572,7 @@ a.button-33 {
 }
 
 .button-center{
-    margin-top: 20px;
-    margin-bottom: 20px;
     text-align: center;
-}
-
-.full-width{
-    width: 100%;
 }
 
 .button-flex{
@@ -506,16 +580,18 @@ a.button-33 {
     text-align: center;
 }
 
-.wireframes-flex{
+
+  .wireframes-flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1000px;
+    margin: 0px auto 0px auto;
+    gap: 25px;
 }
 
 .wireframes-flex img{
-    width: 175px;
-    height: auto;
-    margin: 10px;
+    width: 45%;
     border: 1px solid black;
 }
 
@@ -523,12 +599,11 @@ a.button-33 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
 }
 
 .larger-img-flex img{
-    width: 300px;
     height: auto;
-    margin: 10px;
     border: 1px solid black;
 }
 
@@ -563,22 +638,40 @@ a.button-33 {
     margin-bottom: 15px;
 }
 
-.title-and-logo img{
-    width: 200px;
-    height: auto;
-    margin-bottom: 10px;
+
+.competitive-analysis-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 20px;
 }
+
 
 .ca-child{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 15px;
-    margin-top: 15px;
+    gap: 20px;
 }
 
 .ca-child h3{
     text-align: center;
+    margin: 0px;
+}
+
+.ca-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.ca-content img{
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    box-shadow: none;
+    margin-top: 0px;
 }
 
 .small-div-list ul{
@@ -587,8 +680,7 @@ a.button-33 {
 
 .small-div-list{
     background-color: rgb(241, 241, 241);
-    padding: 20px;
-    margin: 20px 0px 20px 0px;
+    padding: 40px;
 }
 
 .img-flex{
@@ -598,7 +690,7 @@ a.button-33 {
 }
 
 .img-flex img{
-    width: 95%;
+    width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 15px 0px 15px 0px;
@@ -608,7 +700,7 @@ a.button-33 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    gap:30px;
 }
 
 .prototype-flex video{
@@ -623,6 +715,7 @@ a.button-33 {
     max-width: 500px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 0px;
 }
 
 .prototype-flex iframe{
@@ -637,7 +730,10 @@ a.button-33 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 20px;
+}
+
+.prototype-stack img{
+    margin-bottom: 20px;
 }
 
 .ytp-title-link{
@@ -848,8 +944,7 @@ hr{
   }
 
   .full-img{
-      width: 80%;
-      margin-top: 30px;
+      width: 100%;
   }
 
   .twocol-header{
@@ -868,13 +963,13 @@ hr{
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 20px auto 0px auto;
+    gap: 25px;
 }
 
 .wireframes-flex-2 img{
     width: 175px;
     height: auto;
-    margin: 10px;
     border: 1px solid black;
 }
 
@@ -891,7 +986,7 @@ hr{
 
     .carousel{
         max-width: 600px;
-        margin: 40px auto 0px;
+        margin: 0px auto 0px;
     }
 }
 
@@ -914,10 +1009,6 @@ hr{
         font-size: 15pt;
     }
 
-    .projects-header{
-        width: 85%;
-        justify-self: center;
-    }
 
 }
 
@@ -970,6 +1061,59 @@ hr{
         font-size: 18pt;
     }
 
+    /* Projects page*/
+
+    .projects-header{
+        width: 650px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .projects-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
+    justify-self: center;
+    margin-bottom: 120px;
+    }
+
+    .project{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    }
+
+    .project-img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    }
+
+    .project-info{
+    padding: 30px 30px 30px 30px;
+    align-content: center;
+    background-color: #f9f9f9;
+    width: 50%;
+    }
+
+    .project-info h2{
+    font-size: 16pt;
+    font-weight: 600;
+    margin-bottom: 16px;
+    }
+
+    .project-details{
+    margin-bottom: 36px;
+    }
+
+    .project-details h3{
+    font-size: 12pt;
+    font-weight: 600;
+    margin-bottom: 0px;
+    }
+
+
     /* UMEB page and project template styling */
     .project-page-header img{
         height: 225px;
@@ -996,12 +1140,6 @@ hr{
         margin-left: 40px;
     }
 
-    a.button-33{
-        margin-top: 40px;
-        padding: 12px 30% 14px;
-        max-width: 400px;
-    }
-
     .project-page-main{
         margin-top: 70px;
         margin-left: 7%;
@@ -1014,17 +1152,19 @@ hr{
 
     /*Cyberclass design*/
     .ca-child{
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .ca-content{
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 40px;
     }
 
-    .title-and-logo img{
-        width: 150px;
-        height: auto;
-    }
-
-    .title-and-logo{
-        margin-right: 20px;
+    .ca-content img{
+        margin: 0px;
     }
 
     .img-flex{
@@ -1166,6 +1306,10 @@ hr{
         padding-bottom: 0px;
         padding-left: 60px;
     }
+
+    .larger-img-flex img{
+        width: 45%;
+    }
 }
 
 @media screen and (min-width: 1000px){
@@ -1178,7 +1322,6 @@ hr{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding-top: 30px;
     }
 
     .left p {
@@ -1220,11 +1363,37 @@ hr{
         grid-column-gap: 20px;
     }
 
-    /* .image-info-text{
-        position: absolute;
-        top: 35%;
-        left: 20px;
-    } */
+
+    /* Projects page*/
+
+    .projects-header{
+        width: 900px;
+    }
+
+    .projects-container{
+    width: 900px;
+    }
+
+    .project-info{
+    padding: 30px 30px 30px 50px;
+    }
+
+    .project-info h2{
+    font-size: 16pt;
+    font-weight: 600;
+    margin-bottom: 16px;
+    }
+
+    .project-details{
+    margin-bottom: 36px;
+    }
+
+    .project-details h3{
+    font-size: 12pt;
+    font-weight: 600;
+    margin-bottom: 0px;
+    }
+    
 
     /* Project template and UMEB page */
     .span-1{
@@ -1236,25 +1405,12 @@ hr{
         margin-left: 40px;
     }
 
-    .project-small-div>p, .project-small-div>h2, .project-small-div>h3{
-        margin-left: 10%;
-        margin-right: 10%;
-    }
 
     .wireframes-flex img{
         width: 150px;
     }
 
     /*Cyberclass Styling*/
-    .ca-child{
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    .small-div-list{
-        margin-left: 10%;
-        margin-right: 10%;
-    }
 
     .sketch-flex img{
         width: 375px;
@@ -1263,9 +1419,7 @@ hr{
     .prototype-flex{
         flex-direction: row-reverse;
         justify-content: center;
-        align-items: center;
-        margin-left: 10%;
-        margin-right: 10%;
+        align-items: flex-start;
     }
 
     .prototype-flex video{
@@ -1273,15 +1427,16 @@ hr{
         margin-right: 30px;
     }
 
-    .prototype-flex img{
-        width: 50%;
+    .prototype-flex iframe{
         margin-right: 30px;
     }
 
-    .prototype-flex iframe{
-        width: 50%;
-        margin-right: 30px;
+    .flex-right{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
+
 
     .flex-img{
         margin-top: 0px;
@@ -1330,6 +1485,7 @@ hr{
 .image-info-text h2{
     font-size: 22pt;
 }
+
 
 }
 
