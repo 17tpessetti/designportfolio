@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
+    <title>Taylor Pessetti</title>
+</head>
+<body>
+    <a class="skip" href="#main">Skip to Main Content</a>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+          <a class="navbar-brand typewriter long-logo" href="index.html"><img src="images/icons/long-logo.png" alt="Taylor Pessetti design logo"></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="password.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.pdf" target="_blank">Resume</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <main id="main">
+       <div class="project-page-header">
+           <h1>Order Modification for Veterinarians</h1>
+            </div>
+       <div class="project-page-main">
+        <div class="project-small-div">
+          <h2>The Problem</h2>
+          <p>Veterinary practices frequently have to deny online orders because pet owners select the wrong product or purchase incorrect quantities. This results in unnecessary delays and lost revenue for the practice. To address this, we propose enabling practices to modify orders directly, rather than denying them and returning them to pet owners for correction.</p>
+       </div>
+       <div class="project-small-div">
+         <h2>Iteration 1: Preliminary Design Ideas</h2>
+         <p>The initial designs consolidated two separate workflows, product approval and product denial, into a single, unified "Review" process. This streamlined experience enables practices to evaluate the entire order before determining the appropriate action, improving clarity and decision-making efficiency.</p>
+<p>This change also addressed a key usability concern. Practices were hesitant to click "Approve" without first viewing additional order details. Although those details were technically accessible after selecting "Approve," the flow was not intuitive and created unnecessary friction. The new review step makes all relevant information visible upfront, increasing confidence and reducing errors.</p>
+<p>Additionally, the review experience introduces the ability for practices to modify orders directly, rather than denying them and requiring pet owners to resubmit a corrected purchase. This ensures that pet owners receive the appropriate product while allowing practices to retain revenue that might otherwise be lost through denied orders.</p>
+          <div class="wireframes-flex-3">
+            <img alt="Sidsheet showing how to modify an order in the veterinarian's experience" src="images/ordermod/initial1.png">
+            <img alt="Sidsheet showing how to modify an order in the veterinarian's experience" src="images/ordermod/initial2.png">
+            <img alt="Sidsheet showing how to modify an order in the veterinarian's experience" src="images/ordermod/initial3.png">
+        </div>
+        </div>
+        <div class="project-small-div">
+         <h2>Usability Testing and Interviews</h2>
+         <p>I conducted user interviews with veterinary practices to validate demand for the product modification feature and ensure the proposed workflow was intuitive and usable. During these sessions, we explored the primary reasons practices deny orders, the internal processes behind those decisions, and the specific information they rely on when evaluating denials. We also assessed whether practices actively track denial patterns or view them as a meaningful operational metric. Participants were guided through multiple user flows using a Figma prototype, with structured questions asked throughout to evaluate clarity, usability, and overall effectiveness of the experience.</p>
+        <div class="small-div-list">
+            <h3>Key Findings</h3>
+            <ul>
+              <li>Practices refernced that denied products were hardly ever re-purchased on their online store and that the users would either purchase the product elsewhere or not purchase at all.</li>
+              <li>The modification flow was viewed as "extremely helpful" and as a "beneficial workflow" for practices, increasing our confidence in the adoption of the feature.</li>
+              <li>Ensuring pet parents were satisfied with the modification was an important part of the practice's flow. Practices voiced that they would contact the client before making a modification, often by phone.</li>
+            </ul>
+        </div>
+        </div>
+        <div class="project-small-div">
+          <h2>Final Designs and Handoff</h2>
+          <p>After analyzing the research findings and collaborating closely with our development team, I designed the final handoff screens to support a seamless experience. These updates included introducing a clear indicator when an order was actively being modified, simplifying pricing details to reduce confusion for practices, and clarifying how clients would be notified of product modifications.
+In addition, I developed a supporting email series and created new transactional email templates to keep pet parents informed throughout the order modification process.</p>
+        <div class="wireframes-flex-3">
+            <img alt="Photo of the order modification experience" src="images/ordermod/Drawer.png">
+            <img alt="Photo of the order modification experience" src="images/ordermod/Drawer-2.png">
+            <img alt="Photo of the order modification experience" src="images/ordermod/Drawer-3.png">
+            <img alt="Photo of the order modification experience" src="images/ordermod/Drawer-4.png">
+            <img alt="Photo of the order modification experience" src="images/ordermod/Drawer-5.png">
+        </div>
+        </div>
+        <div class="project-small-div">
+          <h2>Product Marketing Materials</h2>
+          <p>I developed comprehensive product marketing materials to ensure veterinary teams were aware of the new feature and understood how to use it effectively. These deliverables included a help center article, a video walkthrough demonstrating the feature, and multiple email and in-platform announcements highlighting the potential benefits of optimizing their product configurations.</p>
+        </div>
+       </div>
+    </main>
+    <footer>
+      <div class="main-icons">
+        <a href="https://www.linkedin.com/in/taylor-pessetti/" target="_blank"><img class="icon" width="200" src="images/icons/linkedin.png" alt="Linkedin Logo"></a>
+        <a href="https://github.com/17tpessetti" target="_blank"><img class="icon" width="200" src="images/icons/github.png" alt="Github Logo"></a>
+        <a href="https://www.instagram.com/taylorpessetti/" target="_blank"><img class="icon" width="200" src="images/icons/instagram.png" alt="Instagram Logo"></a>
+    </div>
+        <p>Taylor Pessetti &copy;2025</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
