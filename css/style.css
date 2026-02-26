@@ -992,6 +992,21 @@ hr{
     border: 1px solid black;
 }
 
+  .wireframes-flex-4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0px auto 20px auto;
+    gap: 25px;
+}
+
+.wireframes-flex-3 img{
+    max-width: 300px;
+    border: 1px solid black;
+}
+
 
 
 /*Modal for images styling*/
